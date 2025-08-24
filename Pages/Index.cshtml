@@ -1,0 +1,398 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Trịnh Hoàng Tú</span>
+                    <br>Cybersecurity Enthusiast & Student
+                </h1>
+                <p class="hero-subtitle">
+                    Sinh viên ngành Công nghệ thông tin với niềm đam mê về An ninh mạng và phát triển phần mềm.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#apps" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Tải ứng dụng
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Liên hệ
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Apps Section -->
+<section id="apps" class="apps-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Ứng dụng & Công cụ</h2>
+            <p class="section-subtitle">Các ứng dụng và công cụ tôi đang phát triển</p>
+        </div>
+
+        <div class="apps-grid">
+            <div class="app-card fade-in">
+                <div class="app-icon">
+                    <i class="fas fa-mouse-pointer"></i>
+                </div>
+                <div class="app-content">
+                    <h3 class="app-title">AutoClicker</h3>
+                    <p class="app-description">Ứng dụng tự động click chuột đơn giản và hiệu quả.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Desktop</span>
+                        <span class="feature-tag">Automation</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="#" class="app-download">
+                        <i class="fab fa-windows"></i>
+                        Windows
+                    </a>
+                    <a href="#" class="app-source">
+                        <i class="fab fa-github"></i>
+                        Source
+                    </a>
+                </div>
+            </div>
+
+            <div class="app-card fade-in">
+                <div class="app-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="app-content">
+                    <h3 class="app-title">TuDevKit</h3>
+                    <p class="app-description">Bộ công cụ hỗ trợ phát triển phần mềm đa năng.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Developer Tools</span>
+                        <span class="feature-tag">Utility</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="#" class="app-download">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </a>
+                    <a href="#" class="app-source">
+                        <i class="fab fa-github"></i>
+                        Source
+                    </a>
+                </div>
+            </div>
+
+            <div class="app-card fade-in">
+                <div class="app-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="app-content">
+                    <h3 class="app-title">SecureNote</h3>
+                    <p class="app-description">Ứng dụng ghi chú bảo mật với mã hóa dữ liệu.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Security</span>
+                        <span class="feature-tag">Notes</span>
+                    </div>
+                </div>
+                <div class="app-actions">
+                    <a href="#" class="app-download">
+                        <i class="fas fa-mobile-alt"></i>
+                        Mobile
+                    </a>
+                    <a href="#" class="app-source">
+                        <i class="fab fa-github"></i>
+                        Source
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-apps fade-in">
+            <p>Xem thêm các dự án khác tại:</p>
+            <a href="https://thtcsec.github.io/portfolio" class="btn btn-outline" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                Xem Portfolio
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <h2 class="section-title">Về tôi</h2>
+                <p class="about-description">
+                    Tôi là Trịnh Hoàng Tú, một sinh viên ngành Công nghệ thông tin tại Trường Đại học Ngoại ngữ - Tin học TPHCM. Tôi có niềm đam mê sâu sắc với An ninh mạng và phát triển phần mềm, luôn tìm kiếm cơ hội để học hỏi và đóng góp vào các dự án mã nguồn mở.
+                </p>
+
+                <div class="principles">
+                    <div class="principle-item">
+                        <div class="principle-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="principle-content">
+                            <h4>Bảo mật ưu tiên</h4>
+                            <p>Mọi ứng dụng đều được thiết kế với bảo mật là ưu tiên hàng đầu</p>
+                        </div>
+                    </div>
+                    <div class="principle-item">
+                        <div class="principle-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="principle-content">
+                            <h4>Mã nguồn mở</h4>
+                            <p>100% mã nguồn công khai để cộng đồng có thể kiểm tra và đóng góp</p>
+                        </div>
+                    </div>
+                    <div class="principle-item">
+                        <div class="principle-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="principle-content">
+                            <h4>Quyền riêng tư</h4>
+                            <p>Không thu thập dữ liệu, không quảng cáo, chỉ phục vụ người dùng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <h4>Học vấn & Tiến độ</h4>
+                    <p><strong>Trường Đại học Ngoại ngữ - Tin học TPHCM</strong> - Công nghệ thông tin</p>
+                    <ul>
+                        <li>Hiện đang học kỳ 5, hoàn thành 73 tín chỉ.</li>
+                        <li>GPA: 3.34</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <h4>Kỹ năng chuyên môn</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML5/CSS3/JavaScript</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Kali Linux</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Liên hệ & Yêu cầu</h2>
+            <p class="section-subtitle">
+                Bạn có ý tưởng cho một ứng dụng bảo mật? Hãy chia sẻ với tôi!
+            </p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>tht.csec2005@gmail.com</p>
+                        <a href="mailto:tht.csec2005@gmail.com" class="contact-link">Gửi email</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>GitHub</h4>
+                        <p>@@thtcsec</p>
+                        <a href="https://github.com/thtcsec" class="contact-link" target="_blank">Xem profile</a>
+                    </div>
+                </div>
+
+                
+
+                <div class="security-notice">
+                    <div class="notice-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="notice-content">
+                        <h4>Báo cáo lỗi bảo mật</h4>
+                        <p>
+                            Nếu bạn phát hiện lỗi bảo mật trong các ứng dụng của tôi,
+                            vui lòng báo cáo qua email riêng tư.
+                        </p>
+                        <a href="mailto:tht.csec2005@gmail.com" class="security-email">
+                            tht.csec2005@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form fade-in">
+                <form class="request-form" method="post">
+                    <div class="form-group">
+                        <label for="name">Tên của bạn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Loại dự án</label>
+                        <select id="project-type" name="projectType" required>
+                            <option value="">Chọn loại dự án</option>
+                            <option value="mobile-app">Ứng dụng di động</option>
+                            <option value="web-app">Ứng dụng web</option>
+                            <option value="desktop-app">Ứng dụng desktop</option>
+                            <option value="security-tool">Công cụ bảo mật</option>
+                            <option value="library">Thư viện/SDK</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+
+                    
+
+                    <div class="form-group">
+                        <label for="description">Mô tả chi tiết</label>
+                        <textarea id="description" name="description" rows="6"
+                                  placeholder="Mô tả ý tưởng, tính năng cần thiết, yêu cầu bảo mật đặc biệt..." required></textarea>
+                    </div>
+
+                    
+
+                    <div class="form-checkbox">
+                        <label>
+                            <input type="checkbox" name="opensource" value="true">
+                            <span class="checkmark"></span>
+                            Tôi đồng ý dự án được phát triển dưới dạng mã nguồn mở
+                        </label>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <label>
+                            <input type="checkbox" name="privacy" value="true" required>
+                            <span class="checkmark"></span>
+                            Tôi đã đọc và đồng ý với <a href="/privacy" target="_blank">chính sách bảo mật</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Gửi yêu cầu
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <link rel ="stylesheet" href="~/css/index.css"/>
+        
+
+    <script>
+            // Form submission
+            document.querySelector('.request-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Simple form validation and submission simulation
+                const submitBtn = document.querySelector('.btn-submit');
+                const originalText = submitBtn.innerHTML;
+
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang gửi...';
+                submitBtn.disabled = true;
+
+                // Simulate API call
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Đã gửi thành công!';
+                    submitBtn.style.background = 'var(--success-color)';
+
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = '';
+                        this.reset();
+                    }, 2000);
+                }, 2000);
+            });
+
+            // Scroll to apps section from hero
+            document.querySelector('.scroll-indicator').addEventListener('click', function() {
+                document.getElementById('apps').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            // Dynamic stats counter animation
+            function animateCounters() {
+                const counters = document.querySelectorAll('.stat-number');
+                counters.forEach(counter => {
+                    const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));
+                    const suffix = counter.textContent.replace(/[\d]/g, '');
+                    let current = 0;
+                    const increment = target / 100;
+
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            counter.textContent = target + suffix;
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = Math.floor(current) + suffix;
+                        }
+                    }, 20);
+                });
+            }
+
+            // Trigger counter animation when stats come into view
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            });
+
+            const heroStats = document.querySelector('.hero-stats');
+            if (heroStats) {
+                statsObserver.observe(heroStats);
+            }
+        }
+    </script>
+}

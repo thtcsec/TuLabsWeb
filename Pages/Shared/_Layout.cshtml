@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TuLabsWeb</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <i class="fas fa-shield-alt"></i>
+                THT Security
+            </a>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/" class="nav-link">Trang chủ</a></li>
+                <li><a href="#apps" class="nav-link">Ứng dụng</a></li>
+                <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                <li><a href="/privacy" class="nav-link">Bảo mật</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Về THT Security</h3>
+                    <p>Chuyên phát triển các ứng dụng bảo mật mã nguồn mở, ưu tiên tính riêng tư và bảo mật dữ liệu người dùng.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/thtcsec" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contact@thtcsec.dev" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Sản phẩm</h3>
+                    <a href="#apps">Ứng dụng di động</a>
+                    <a href="#apps">Công cụ bảo mật</a>
+                    <a href="#apps">Thư viện mã nguồn mở</a>
+                    <a href="#contact">Yêu cầu phát triển</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Hỗ trợ</h3>
+                    <a href="/privacy">Chính sách bảo mật</a>
+                    <a href="#contact">Liên hệ hỗ trợ</a>
+                    <a href="https://github.com/thtcsec" target="_blank">Mã nguồn</a>
+                    <a href="#contact">Báo lỗi bảo mật</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trịnh Hoàng Tú. Mã nguồn mở - Bảo mật ưu tiên.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

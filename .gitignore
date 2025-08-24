@@ -1,0 +1,29 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+## Others
+*.log
+*.tlog
+*.cache
+*.dbmdl
+*.bak
+*.backup
+*.tmp
+*.temp
+
+## Rider / JetBrains
+.idea/
+
+## OS junk
+.DS_Store
+Thumbs.db
